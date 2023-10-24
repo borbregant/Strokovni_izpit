@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Vektorji}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\thispagestyle{empty}	% ne oštevilči strani
+
+\noindent MATEMATIKA, \quad 2. B \hfill Škofijska klasična gimnazija
+\hrule
+\vspace{1ex}
+\noindent \textbf{Tema: Množenje vektorja s skalarjem}
+\vspace{1ex}
+
+\noindent \textbf{Enota: Vektorji}
+\vspace{1ex}
+
+\noindent \textbf{Datum: 25. 10. 2023}
+\vspace{1ex}
+
+\noindent \textbf{Mentorica: dr. Marina Rugelj}
+\vspace{1ex}
+
+\noindent \textbf{Viri in literatura: Planum novum, 2020, Pavlič G. in drugi}
+\vspace{1ex}
+\hrule
+\vspace{2ex}
+\noindent \textbf{Učne oblike: Frontalna, individualna}
+\vspace{1ex}
+
+\noindent \textbf{Učne metode: Metoda razprave v uvodu, razlaga}
+\vspace{1ex}
+
+\noindent \textbf{Učni pripomočki: Tabla, učbenik}
+\vspace{1ex}
+
+\noindent \textbf{Učni cilji: Dijaki/dijakinje znajo množiti vektorje s skalarjem na grafičnem nivoju.} 
+\vspace{4ex}
+\hrule
+\vspace{5ex}
+\noindent \textbf{Vsebina in potek:} 
+
+\newpage
+
+\section*{\textcolor{violet}{Vžig in uvod}}
+
+Po pozdravu pregledamo morebitna vprašanja glede domače naloge. Včerajšnjo obravnavano snov na kratko preverimo s klicanjem posameznih dijakov, da povejo osnovna dejstva o vektorjih. \textcolor{violet}{Dijaki pri pogovoru sodelujejo in odgovarjajo.}
+
+Začnemo z uvodom množenja vektorjev s številom v razpravi. Razmišljamo, kaj bi se zgodilo, če seštevamo enaka vektorja. \textcolor{violet}{Dijaki pri pogovoru sodelujejo.}
+
+
+\section*{\textcolor{violet}{Razlaga snovi}}
+
+\textbf{Množenje vektorja s številom (skalarjem)}
+
+$m \cdot \vec{a}$, kjer $m\in\mathbb{R}_{\neq 0}$ je vektor z enako smerjo kot $\vec{a}$, usmerjenost je odvisna od predznaka $m$, njegova velikost pa je enaka $|m| \cdot |\vec{a}|$. Za $|m|>1$, se $\vec{a}$ podaljša, za $0<|m|<1$, se $\vec{a}$ skrajša.
+
+\begin{enumerate}[i]
+    \item Asociativnost v skalarnem delju: $m(n\vec{a})=(mn)\vec{a}$
+    \item Distributivnost v vektorskem delu: $m(\vec{a}+\vec{b})=m\vec{a}+m\vec{b}$
+    \item Distributivnost v skalarnem delu: $(m+n)\vec{a}=m\vec{a}+n\vec{a}$
+\end{enumerate}
+
+Iz vektorja $\vec{a}$ lahko naredimo enotski vektor $\vec{e}=\frac{\vec{a}}{|\vec{a}|}$
+
+\section*{\textcolor{violet}{Utrjevanje}}
+\textbf{\textcolor{violet}{Primere naredimo skupaj.}}
+
+\begin{zgled}
+    Izračunaj $n$, če za vektor $\vec{a}$ velja $(n^2 +3)\vec{a}-(n+2)\vec{a}=(3+n)\vec{a}+\vec{a}$.
+\end{zgled}
+
+\begin{zgled}
+    Nariši trikotnik $ABC$, kjer $|\vec{AB}|=6cm$, $|\vec{BC}|=5cm$ in $|\vec{CA}|=3cm$. Nato nariši vektor $\vec{a}+2\vec{c}$.
+\end{zgled}
+
+\textbf{\textcolor{violet}{Dijaki si DN zabeležijo in odidejo iz razreda}}
+
+\begin{example}
+    Domača naloga 286b, 293ab
+\end{example}
+
+\end{document}
