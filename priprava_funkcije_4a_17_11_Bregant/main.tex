@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[slovene]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Naloga~\theexample. #1} \rmfamily}{\medskip}
+
+\newtheorem*{zgled}{Zgled}
+
+\title{Funkcije}
+\author{Bor Bregant}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\thispagestyle{empty}	% ne oštevilči strani
+
+\noindent MATEMATIKA, \quad 4. A \hfill Škofijska klasična gimnazija
+\hrule
+\vspace{1ex}
+\noindent \textbf{Tema:} Ponovitev že znanih pojmov o funkcijah, računanje s funkcijami
+\vspace{1ex}
+
+\noindent \textbf{Enota:} Funkcije
+\vspace{1ex}
+
+\noindent \textbf{Datum:} 17. 11. 2023
+\vspace{1ex}
+
+\noindent \textbf{Mentorica:} dr. Marina Rugelj
+\vspace{1ex}
+
+\noindent \textbf{Viri in literatura:} Tempus novum, 2020, Pavlič G. in drugi
+\vspace{1ex}
+\hrule
+\vspace{2ex}
+\noindent \textbf{Učne oblike:} Frontalna, individualna
+\vspace{1ex}
+
+\noindent \textbf{Učne metode:} Metoda razprave v uvodu, razlaga
+\vspace{1ex}
+
+\noindent \textbf{Učni pripomočki:} Tabla, učbenik
+\vspace{1ex}
+
+\noindent \textbf{Učni cilji:} Dijaki/dijakinje ponovijo in uporabljajo pojme, vezane na funkcije. Dijaki/dijakinje usvojijo računanje s funkcijami.
+\vspace{4ex}
+\hrule
+\vspace{5ex}
+\noindent \textbf{Vsebina in potek:} 
+
+\vspace{5ex}
+
+\section*{\textcolor{violet}{Uvodna motivacija}}
+
+\textbf{\textcolor{violet}{V razpravi ponovimo že znane pojme in naloge pri funkcijah.}}
+
+
+\textbf{\textcolor{violet}{Definicija, ki jo narekujemo}}
+
+Funkcija ali preslikava $f$ iz množice $A$ v množico $B$ je predpis, ki vsakemu elementu iz $A$ priredi natanko en element iz množice $B$.
+
+\textbf{\textcolor{violet}{Dijaki pred tablo rešijo naslednji sklop nalog}}
+
+\begin{zgled}
+    Zapiši definicijsko območje in ničle za funkcijo $f(x)=\sqrt{x^2-1}$ in $g(x)=\log{\left(x(x-1)(x+1)\right)}$.\\
+    Ob grafu funkcije zapiši zalogo vrednosti intervale naraščanja in obravnavaj konveksnost za $h(x) = \cos\left(x-\frac{\pi}{2}\right)-4$.\\
+    Obravnavaj sodost oziroma lihost za $m(x)=x^2 +x^6$ in $n(x)=x+x^3$.\\
+    Zapiši ničle in začetno vrednost za $e(x)=2^{\frac{x}{2}}-\left(\frac{1}{2}\right)^4$.
+\end{zgled}
+
+\section{Računanje s funkcijami}
+
+\begin{enumerate}[i]
+    \item Vsota $\left(f+g\right)(x)=f(x)+g(x)$
+    \item Razlika $\left(f-g\right)(x)=f(x)-g(x)$
+    \item Produkt $\left(f\cdot g\right)(x)=f(x)\cdot g(x)$
+    \item Kvocient $\left(\frac{f}{g}\right)(x)=\frac{f(x)}{g(x)}$ za $g(x)\neq 0, \forall x\in D_g$
+    \item Produkt s številom $\left(k\cdot f\right)(x)=k \cdot f(x)$
+\end{enumerate}
+
+\section*{\textcolor{violet}{Utrjevanje}}
+\textbf{\textcolor{violet}{Dijak rešuje nalogo pred tablo}}
+
+\begin{zgled}
+    Zapiši vsoto, razliko, produkt in kvocient funkcij $f(x)=x-3$ in $g(x)=-2x+1$.
+\end{zgled}
+
+\begin{example}
+    Domača naloga 569c, 576, 578ad
+\end{example}
+
+\textbf{\textcolor{violet}{Dijaki si DN zabeležijo in odidejo iz razreda}}
+
+\end{document}
